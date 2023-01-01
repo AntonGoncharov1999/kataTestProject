@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/kod_simvoly_programmirovanie_178845_2560x1600.jpg");
+
+    margin: 0 auto;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calc {
+    width: 50vh;
+    height: 60vh;
+
+    border: solid 2px #174;
+    border-radius: 10px;
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background: rgb(168, 128, 128);
+}
+
+.calc__Сoreboard {
+    width: 90%;
+    background: rgb(216, 84, 84);
+    border: solid 2px rgb(190, 16, 16);
+    border-radius: 30px;
+}
+
+.calc__result {
+    color: #fff;
+    font-size: 50px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.calc__Digitalunit {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.calc__num {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.calc__btn_num {
+    height: 55px;
+    width: 55px;
+}
+
+.calc__operations {}
+
+.calc__decision {}
+
+.calc__btn {
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #eee;
+    cursor: pointer;
+
+    font-size: 40px;
+    box-shadow: 2px 3px 2px rgb(0, 0, 0, 0.5);
+}
