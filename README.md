@@ -1,2 +1,2 @@
 # kataTestProject
-Тестовое задание для прохождения курса Kata Academy
+Тестовое задание для прохождения на курса Kata Academy
