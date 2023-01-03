@@ -12,7 +12,6 @@ calc.addEventListener('click', function (event) {
             break
         case 'Enter':
             if (result.innerText.search(/[^0-9*/+-.]/mi) != -1) return;
-
             result.innerText = eval(result.innerText).toFixed(2)
             break
         default:
