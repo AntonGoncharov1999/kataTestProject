@@ -4,28 +4,61 @@
 
 body {
     background-image: url("../images/kod_simvoly_programmirovanie_178845_2560x1600.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     margin: 0 auto;
     min-height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
 }
 
-.calc {
-    width: 50vh;
-    height: 60vh;
+header {
+    background-color: rgba(0, 0, 0, 0.534);
+    border-bottom: solid 4px #000;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.header__logo {
+    height: 100px;
+    width: 100px;
     border: solid 2px #174;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.header__link {
+    text-decoration: none;
+    color: #eee;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.calc {
+    width: 60vh;
+    height: 70vh;
     border-radius: 30px;
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: rgb(168, 128, 128);
+    background-image: url(../images/1663657405_7-phonoteka-org-p-telefon-bez-fona-krasivo-8.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 .calc__Сoreboard {
-    width: 90%;
+    width: 50%;
+    margin-left: 20px;
+    height: 60px;
     background: rgb(216, 84, 84);
     border: solid 2px rgb(190, 16, 16);
     border-radius: 30px;
@@ -34,30 +67,31 @@ body {
 
 .calc__result {
     color: #fff;
-    font-size: 50px;
+    font-size: 30px;
     display: flex;
     justify-content: center;
+    padding: 10px;
 
 }
 
 .calc__Digitalunit {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 30%;
+    margin-right: 25%;
 }
 
 .calc__num {
-    margin-top: 10px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
 }
 
 
 .calc__operations {
     width: 100%;
-    margin-top: 10px;
+    margin-top: 5px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -78,18 +112,18 @@ body {
     background-color: #eee;
     cursor: pointer;
 
-    font-size: 40px;
+    font-size: 30px;
     box-shadow: 2px 3px 2px rgb(0, 0, 0, 0.5);
 }
 
 .calc__btn_num {
-    height: 55px;
-    width: 55px;
+    height: 40px;
+    width: 40px;
 }
 
 .calc__btn_operator {
-    height: 55px;
-    width: 55px;
+    height: 40px;
+    width: 40px;
     background: rgb(221, 167, 17);
 }
 
@@ -108,4 +142,15 @@ body {
 
 .calc__btn:active {
     box-shadow: 1px 1px 2px rgb(0, 0, 0, 0.5);
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.534);
+    border-top: solid 4px #000;
+    width: 100%;
+    color: #fff;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
