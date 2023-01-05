@@ -54,7 +54,9 @@ function calculator(string) {
         }
     }
     errorHendler(value);
+
     // логика вычеслений
+
     if (arab.test(value)) {
         let a = Number(value.match(/^\d{1,}/m));
         let b = Number(value.match(/\d{1,}$/m));
@@ -74,6 +76,7 @@ function calculator(string) {
         result = parseInt(result);
         result = String(result);
         console.log(result);
+        return result;
     } else if (rom.test(value)) { //ROME
         let arrSimvol = string.split(/[+*\/-]/g)
         let c = value.match(/\+|\-|\*|\//);
@@ -112,6 +115,7 @@ function calculator(string) {
         }
         console.log("результат в римской записи: " + romeNum)
     }
+    return result;
 }
 
 calculator('5 + 2');
