@@ -23,7 +23,7 @@ function calculator(string) {
             throw new Error('используются одновременно разные системы счисления');
         } else if (letters[1] !== '+' && letters[1] !== '-' && letters[1] !== '/' && letters[1] !== '*') {
             throw new Error("формат математической операции не удовлетворяет заданию - два операнда и один оператор (+, -, /, *)");
-        } else if (/\d{1,}|^./.test(letters[0]) && /\d{1,}|^./.test(letters[2])) {
+        } else if (/\d{1,}./.test(letters[0]) && /\d{1,}./.test(letters[2])) {
             let a = Number(letters[0].match(/\d{1,}/));
             let b = Number(letters[2].match(/\d{1,}/));
             console.log('proverka ' + a + " " + b);
