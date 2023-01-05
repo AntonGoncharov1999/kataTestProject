@@ -77,7 +77,7 @@ function calculator(string) {
         result = String(result);
         console.log(result);
         return result;
-    } else if (rom.test(value)) { //ROME
+    } else if (rom.test(value)) { //  ROME
         let arrSimvol = string.split(/[+*\/-]/g)
         let c = value.match(/\+|\-|\*|\//);
         let arrNum = []
@@ -114,8 +114,8 @@ function calculator(string) {
             }
         }
         console.log("результат в римской записи: " + romeNum)
+        return romeNum;
     }
-    return result;
 }
 
 calculator('5 + 2');
