@@ -23,10 +23,11 @@ function calculator(string) {
             throw new Error('используются одновременно разные системы счисления');
         } else if (letters[1] !== '+' && letters[1] !== '-' && letters[1] !== '/' && letters[1] !== '*') {
             throw new Error("формат математической операции не удовлетворяет заданию - два операнда и один оператор (+, -, /, *)");
-        } else if (/\d{1,}./.test(letters[0]) && /\d{1,}./.test(letters[2])) {
-            let a = Number(letters[0].match(/\d{1,}/));
-            let b = Number(letters[2].match(/\d{1,}/));
+        } else if (/\d{1,}|^-/.test(letters[0]) && /\d{1,}|^-/.test(letters[2])) {
+            let a = Number(letters[0].match(/\d{1,}|^-./));
+            let b = Number(letters[2].match(/\d{1,}|^-./));
             console.log('proverka ' + a + " " + b);
+            console.log("           " + letters[0] + " " + letters[2])
             if ((a < 1 || a > 10) || (b < 1 || b > 10)) {
                 throw new Error("операнды должны быть в диапазоне от 1 до 10");
             } else {
@@ -127,7 +128,8 @@ calculator('5 / 4');
 calculator("I - I");
 calculator("I - II");
 calculator("I + I");
-calculator("1 + 1")
+
+calculator("11 + 1")
 /*
 calculator("XI + I");  //отвечает корректно
 calculator("11 + 1");  //отвечает корректно
